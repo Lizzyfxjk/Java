@@ -19,8 +19,8 @@ class Main {
    System.out.println(numOfPpl);
    System.out.println("number of people that live with you" + numOfPpl);
    int numOfItems = 10;
-   System.out.println(numOfItems)
-   System.out.println
+   System.out.println(numOfItems);
+   System.out.println("number of items" + numOfItems);
 
 
 /*  Challenge 2:
@@ -28,13 +28,27 @@ class Main {
     2) student's GPA
     3) growth rate of your investment
 */
-
+    double temp = 72.0;
+    System.out.println(temp);
+    System.out.println("temperature" + temp);
+    double studsGpa = 3.5;
+    System.out.println(studsGpa);
+    System.out.println("student's GPA" + studsGpa);
+    double growthInvstmt = 109.50;
+    System.out.println(growthInvstmt);
+    System.out.println("growth rate of your investment" + growthInvstmt);
 
 /*  Challenge 3:
     1) Student's last name 
     2) student's first initial
     3) description of an item 
 */
+    String lastname = "Guallpa";
+    System.out.println(lastname);
+    System.out.println("Student's last name" + lastname);
+    char Initial = 'L';
+    System.out.println(Initial);
+    System.out.println("student's first initial" + Initial);
 
 
 /*  Challenge 4:
@@ -42,7 +56,15 @@ class Main {
     2) the status whether the game is over
     3) the status whether the battery is charging
 */
-
+    boolean lightsAreOn = false;
+    System.out.println(lightsAreOn);
+    System.out.println("the status whether lights are on" + lightsAreOn);
+    boolean isGameOver = true;
+    System.out.println(isGameOver);
+    System.out.println("the status whether the game is over");
+    boolean batteryCharge = false;
+    System.out.println(batteryCharge);
+    System.out.println("the status whether the battery is charging" + batteryCharge);
 
 
     // **************************************************
