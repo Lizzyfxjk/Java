@@ -28,20 +28,45 @@ class Main {
   
 //    Challenge 3:  See file Actvy7_Eq3
       System.out.println("Enter the value for a z");
-      double z = Input.readDouble(z,3)+ 5;
+      double z = Input.readDouble();
       double q = Math.pow(z,3)+5;
       System.out.println("Value of q is "+q);
   
 //    Challenge 4:  See file Actvy7_Eq4
-  
+      System.out.println("Enter the value for m");
+      double m = Input.readDouble();
+      double n = Input.readDouble();
+      double k = 0;
+      System.out.println("Enter the value for n");
+      k = Math.pow(m,5)/ Math.sqrt(n+1);
+      System.out.println("Value of k is " +k);
+      
 
 //    Challenge 5:  See file Actvy7_Eq5
-    
+      System.out.println("Enter the value for t");
+      double t = Input.readDouble();
+      double r = Input.readDouble();
+      System.out.println("Enter value of r");
+      double s = Math.pow(t,5)* Math.pow(r+2,4);
+      System.out.println("Value of s is" + s);
   
 //    Challenge 6:  See file Actvy7_Eq6
-
+      System.out.println("Enter the value for x1, x2, y1, y2");
+      double x1 = Input.readDouble();
+      double x2 = Input.readDouble();
+      double y1 = Input.readDouble();
+      double y2 = Input.readDouble();
+      double d = Math.sqrt(Math.pow(x2-x1, 2)+ Math.pow(y2-y1, 2));
+      System.out.println("Value of d is "+d);
 
 //    Challenge 7:  See file Actvy7_Eq7    (HINT: What does the "plus minus: after "-b" mean?)
+      System.out.println("Enter the value for a, b, c");
+      x1 = (-b - Math.sqrt( b * b - 4 * a * c))/ (2 * a);
+      System.out.println("Value of x1 is" + x1);
+      x2 = (-b + Math.sqrt( b * b - 4 * a * c))/ (2 * a);
+      System.out.println("Value of x2 is" + x2);
+
+
 
     
 
