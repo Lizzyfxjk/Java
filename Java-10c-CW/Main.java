@@ -8,7 +8,11 @@ class Main {
     double tickets = Input.readDouble();
     double result = groupSavings(tickets);
     System.out.println("Total cost is:" + result);
-        
+  
+    System.out.println("You saved $" + groceryDiscount(190,3));
+    System.out.println("You saved $" + groceryDiscount(220,4));
+    System.out.println("You saved $" + groceryDiscount(250,5));
+    System.out.println("You saved $" + groceryDiscount(300,6));
   }
 
   /*
@@ -22,12 +26,13 @@ class Main {
     double groupSavings(double tickets){
       if(tickets >= 1 && tickets <= 8)
       return 11*tickets;
-    }else if (tickets >= 9 && tickets <= 16){
+    else if (tickets >= 9 && tickets <= 16)
       return 10.5*tickets;
-    }else if (tickets > 16){
+    else if (tickets > 16)
       return tickets*8.5;
-    }else 
+    else 
       return 0;
+    }
   
   /*
     Problem 2:
@@ -40,6 +45,16 @@ class Main {
       Spend over $200 and purchase more than 4 cans: $25 savings
       Otherwise: No discount.
     */
-
+    double groceryDiscount (double amount, int cans){
+      double result = 0;
+      if (amount >= 100 && amount <= 200 && cans >= 3)
+        result = 10;
+      else if (amount > 200 && cans > 4)
+        result = 25;
+      else 
+        return 0;
+      
+      return result;
+    }
 
 }
