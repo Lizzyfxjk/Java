@@ -12,11 +12,12 @@ class Main {
     double rate = discount_rate(amount);
 
     // Call the function honors()
-
+    System.out.println( honors(3.9));
+    System.out.println( honors(2.5));
    
     // Call the function shortSize()
-
-    
+    System.out.println( shortSize(35));
+    System.out.println( shortSize(41));
   }
 
   /*
@@ -40,7 +41,12 @@ class Main {
     a string "Honors Student" if the GPA is 3.5 or above; otherwise
     it returns "Work harder".
   */
-    
+    String honors (double GPA){
+      if (GPA >= 3.5)
+        return "Honor Student";
+      else
+        return "Work harder";
+    }
   
   /*
     Problem 3:
@@ -48,7 +54,12 @@ class Main {
     in inches and returns a string "Medium" if the measurement
     is under 36inches; otherwise it returns "Large".
   */
-
+    String shortSize (double inches){
+      if (inches < 36)
+        return "Medium";
+      else
+        return "Large";
+    }
 
   
   
