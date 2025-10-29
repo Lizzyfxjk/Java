@@ -8,10 +8,9 @@ class Main {
 
   void init(){
   // Call the functions with appropriate arguments
-    void init(){
+    
       range(1, 8, 2);
       compund(1000, 0.07, 5);
-    }
   }
   
   /*
@@ -22,8 +21,9 @@ class Main {
   void range (int start, int end, int step){
     System.out.println(start+" , "+end +", "+step);
     for (int x = start; x<=end; x+=step){
-
+      System.out.println(x+" ");
     }
+    System.out.println();
   }
 
    /* 
