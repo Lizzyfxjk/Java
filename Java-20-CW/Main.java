@@ -6,7 +6,8 @@ class Main {
   void printt(Object o){ System.out.print(o);}
 
   void init(){
-
+print ("She had" + eggs() + "eggs originally");
+print ("x = " + intersect());
    
   }
   /* Problem 1: Eggs
@@ -15,7 +16,10 @@ class Main {
   */
 int eggs(){
   int numberOfEggs = 7;
-  while(! (numberOfEggs % 2 == 1 && numberOfEggs % 3 == 1 && ))
+  while(! (numberOfEggs % 2 == 1 && numberOfEggs % 3 == 1 && numberOfEggs % 4 == 1 && numberOfEggs % 5 == 1 && numberOfEggs % 6 == 1)){
+    numberOfEggs += 7;
+  }
+  return numberOfEggs;
 }
 
 
@@ -26,7 +30,10 @@ int eggs(){
     */
 double intersect(){
   int x = 0;
-  while(x+3
+  while(x+3 != 12-2*x){
+    x++;
+  }
+  return x;
 }
 
   
