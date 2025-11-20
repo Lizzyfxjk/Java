@@ -26,7 +26,13 @@ showArray(friends);
   Write a function convertTempCtoF() that accepts an array of Celsius temperature values, converts each value to Fahrenheit scale, and returns a new array with the converted temperatures. (Use the celsiusToFahrenheit function provided)
   NOTE: To test this function, create an array tempC in celsius which you will pass to test your new function.
   */
-
+double[] convertTempCtoF(double[] cTemps){
+  double[] fTemps = new double[cTemps.length];
+  for(int x = 0; x <= cTemps.length-1; x++){
+    fTemps[x] = celsiusToFahrenheit(cTemps[x]);
+  }
+  return fTemps;
+}
   
   // Function to print all the elements of an array (use a 'for' loop to traverse the array)
   void showArray(String[] a){    
