@@ -15,9 +15,9 @@ class Main {
 	CartItem Cookies = new CartItem("Cookies", 3.50, 1, true);
 
 	//4: display name & original price of items that are on sale
-	Sytem.out.println(Chips.itemName);
+	System.out.println(Chips.itemName);
   System.out.println(Chips.itemPrice);
-  Sytem.out.println(Cookies.itemName);
+  System.out.println(Cookies.itemName);
   System.out.println(Cookies.itemPrice);
 	//5: subtotal (for all quantities of all items in cart, using discounted prices)
 	double subtotal = Banana.getPrice()*Banana.quantity + Chips.getPrice()*Chips.quantity + Cookies.getPrice()*Cookies.quantity;
