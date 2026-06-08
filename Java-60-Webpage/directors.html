@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MOVIES.HUB | Directors</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- import JS file -->
+    <script src="directors.js"></script>
+  </head>
+  
+  <!-- Call the int function when website loads -->
+  <body onload="init()">
+    <div>
+
+      <!--  Header or Banner -->
+      <div id="header">
+        <h1> DIRECTORS </h1>
+      </div>
+
+      <!--  nav bar -->
+      <nav id='nav'>
+        <h2>Browse Directors</h2>
+            <a href="index.html" class="button">HOME</a>   
+            <a href="movies.html" class="button">MOVIES</a> 
+            <a href="actors.html" class="button">ACTORS</a>
+            <a href="directors.html" class="button">DIRECTORS</a>
+      </nav>
+      
+      <!--  Main content (has 3 panels) -->
+      <div class="container">
+        
+        <div class='panel'>
+          <div class="container filter">
+            <div>          
+              
+              <h4> Search Directors by Name</h4>
+              <input style="flex:2;text-align:right;" type="text" 
+                id="name" placeholder="Enter Directors Name" >        
+              <a class="button" onclick="filter()"> Search </a><br>
+              <h4 id="count"></h4>
+            </div>
+          </div>
+        </div>
+        
+        <div id='centerpanel' class='container'>
+          Center Panel
+        </div>
+        
+        <div class='panel'>
+          <div class="container filter">
+            </div>
+            <h4> Top Directors</h4>
+          <p class="director-name">
+             Bong Joon-ho
+            <p class="quote">
+            "Known for blending genres (thriller, drama, satire) in unique ways"
+          </p>
+
+          <p class="director-name">
+             James Cameron
+            <p class="quote">
+            "Directed global hits like Titanic and Avatar"
+          </p>
+
+          <p class="director-name">
+             Chris Buck
+            <p class="quote">
+            "Strong focus on emotional storytelling in animation"
+          </p>
+            
+        </div>
+        
+      </div>
+      
+      <!--  Footer -->
+      <div id='foot'>
+        <h3> MOVIES.HUB © 2026 </h3>
+      </div>
+
+    </div>
+    
+  </body>
+</html>

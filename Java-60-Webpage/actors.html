@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MOVIES.HUB | Actors</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- import JS file -->
+    <script src="actors.js"></script>
+  </head>
+  
+  <!-- Call the int function when website loads -->
+  <body onload="init()">
+    <div>
+
+      <!--  Header or Banner -->
+      <div id="header">
+        <h1> ACTORS </h1>
+      </div>
+
+      <!--  nav bar -->
+      <nav id='nav'>
+        <h2>Browse Actors</h2>
+            <a href="index.html" class="button">HOME</a>   
+            <a href="movies.html" class="button">MOVIES</a> 
+            <a href="actors.html" class="button">ACTORS</a>
+            <a href="directors.html" class="button">DIRECTORS</a>
+      </nav>
+      
+      <!--  Main content (has 3 panels) -->
+      <div class="container">
+        
+        <div class='panel'>
+          <div class="container filter">
+            <div>          
+              
+              <h4> Search Actor by Name</h4>
+              <input style="flex:2;text-align:right;" type="text" 
+                id="name" placeholder="Enter Actors Name" >        
+              <a class="button" onclick="filter()"> Search </a><br>
+              <h4 id="count"></h4>
+            </div>
+          </div>
+        </div>
+        
+        <div id='centerpanel' class='container'>
+          Center Panel
+        </div>
+        
+        <div class='panel'>
+          <h4> Top Actors</h4>
+          <p class="actor-name">
+             Leonardo DiCaprio
+            <p class="quote">
+            "Known for intense, believable emotional acting"
+          </p>
+
+          <p class="actor-name">
+             Daniel Radcliffe
+            <p class="quote">
+            "Became globally recognized from Harry Potter franchise"
+          </p>
+
+
+          <p class="actor-name">
+             Tom Holland
+            <p class="quote">
+            "Well-liked across both Marvel films and other projects"
+          </p>
+        </div>
+        
+      </div>
+      
+      <!--  Footer -->
+      <div id='foot'>
+        <h3> MOVIES.HUB © 2026 </h3>
+      </div>
+
+    </div>
+    
+  </body>
+</html>
